@@ -86,11 +86,11 @@ class Num2roman {
 	{
 		ob_start();
 ?>
-{exp:num2roman convert="2011"} will convert 2011 to MMXI
+{exp:num2roman:convert num="2011"} will convert 2011 to MMXI
 
 examples:
-  Month: {exp:num2roman convert="{entry_date format="%m"}"}
-  Year:  {exp:num2roman convert="{entry_date format="%Y"}"}
+  Month: {exp:num2roman:convert num="{entry_date format="%m"}"}
+  Year:  {exp:num2roman:convert num="{entry_date format="%Y"}"}
 
 
 <?php
